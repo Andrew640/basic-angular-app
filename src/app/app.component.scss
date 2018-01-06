@@ -1,0 +1,26 @@
+@import '../styles/variables.scss';
+
+.background {
+    background-color:$background;
+    height:100%;
+    background-size:cover;
+}
+
+.icons {
+    color:$icon;
+    font-size:36px;
+    padding:14px 14px;
+    cursor:pointer;
+    &_right {
+        float:right;
+        font-size:32px;
+        margin-top:2px;
+    }
+    &_border {
+        border-bottom:1px solid $border;
+        width:100%;
+    }
+    &_clicked {
+        background-color:$icon_clicked;
+    }
+}
