@@ -1,8 +1,9 @@
 <div class="background">
-  <div class="">
-    <i class="material-icons icons icons_clicked">home</i>
-    <i class="material-icons icons">trending_up</i>
-    <i class="material-icons icons icons_right">settings</i>
-    </div>
+  <div class="header">
+    <i routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="material-icons icons icons_clicked">home</i>
+    <i routerLink="/performance" routerLinkActive="active" class="material-icons icons">trending_up</i>
+    <i routerLink="/settings" routerLinkActive="active" class="material-icons icons icons_right">settings</i>
+  </div>
   <div class="icons_border"></div>
+  <router-outlet></router-outlet>
 </div>

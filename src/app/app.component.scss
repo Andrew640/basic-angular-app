@@ -9,7 +9,7 @@
 .icons {
     color:$icon;
     font-size:36px;
-    padding:14px 14px;
+    padding:14px;
     cursor:pointer;
     &_right {
         float:right;
@@ -20,7 +20,11 @@
         border-bottom:1px solid $border;
         width:100%;
     }
-    &_clicked {
-        background-color:$icon_clicked;
+    &:focus {
+        outline:0;
     }
+}
+
+.active {
+    background-color:$icon_clicked;
 }
