@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "address": "1 street, Croydon, CR2 8CD",
+        "expiry_date": "2018-03-07T10:43:18.259Z",
+        "status": "Created"
+    },
+    {
+        "id": 2,
+        "address": "2 street, Croydon, CR3 8CD",
+        "expiry_date": "2018-04-07T10:43:18.259Z",
+        "status": "Pending tenant action"
+    },
+    {
+        "id": 3,
+        "address": "3 street, Croydon, CR4 8CD",
+        "expiry_date": "2018-05-07T10:43:18.259Z",
+        "status": "Active"
+    },
+    {
+        "id": 4,
+        "address": "4 street, Croydon, CR5 8CD",
+        "expiry_date": "2018-06-07T10:43:18.259Z",
+        "status": "Charge negotiation active"
+    },
+    {
+        "id": 5,
+        "address": "5 street, Selsdon, SO2 8CD",
+        "expiry_date": "2018-07-07T10:43:18.259Z",
+        "status": "Closed"
+    },
+    {
+        "id": 6,
+        "address": "6 street, London, SE2 8CZ",
+        "expiry_date": "2018-08-07T10:43:18.259Z",
+        "status": "Created"
+    },
+    {
+        "id": 7,
+        "address": "7 street, Loughborough, LO2 8CD",
+        "expiry_date": "2018-09-07T10:43:18.259Z",
+        "status": "Pending tenant action"
+    },
+    {
+        "id": 8,
+        "address": "8 street, Leicester, LR2 8CD",
+        "expiry_date": "2018-10-07T10:43:18.259Z",
+        "status": "Active"
+    },
+    {
+        "id": 9,
+        "address": "9 street, Manchester, MR2 8CD",
+        "expiry_date": "2018-11-07T10:43:18.259Z",
+        "status": "Charge negotiation active"
+    },
+    {
+        "id": 10,
+        "address": "10 street, London, SE2 8CD",
+        "expiry_date": "2018-12-07T10:43:18.259Z",
+        "status": "Closed"
+    },
+    {
+        "id": 11,
+        "address": "1 street, Croydon, CR2 8CD",
+        "expiry_date": "2018-03-07T10:43:18.259Z",
+        "status": "Created"
+    },
+    {
+        "id": 12,
+        "address": "2 street, Croydon, CR3 8CD",
+        "expiry_date": "2018-04-07T10:43:18.259Z",
+        "status": "Pending tenant action"
+    },
+    {
+        "id": 13,
+        "address": "3 street, Croydon, CR4 8CD",
+        "expiry_date": "2018-05-07T10:43:18.259Z",
+        "status": "Active"
+    },
+    {
+        "id": 14,
+        "address": "4 street, Croydon, CR5 8CD",
+        "expiry_date": "2018-06-07T10:43:18.259Z",
+        "status": "Charge negotiation active"
+    },
+    {
+        "id": 15,
+        "address": "5 street, Selsdon, SO2 8CD",
+        "expiry_date": "2018-07-07T10:43:18.259Z",
+        "status": "Closed"
+    },
+    {
+        "id": 16,
+        "address": "6 street, London, SE2 8CZ",
+        "expiry_date": "2018-08-07T10:43:18.259Z",
+        "status": "Created"
+    },
+    {
+        "id": 17,
+        "address": "7 street, Loughborough, LO2 8CD",
+        "expiry_date": "2018-09-07T10:43:18.259Z",
+        "status": "Pending tenant action"
+    },
+    {
+        "id": 18,
+        "address": "8 street, Leicester, LR2 8CD",
+        "expiry_date": "2018-10-07T10:43:18.259Z",
+        "status": "Active"
+    },
+    {
+        "id": 19,
+        "address": "9 street, Manchester, MR2 8CD",
+        "expiry_date": "2018-11-07T10:43:18.259Z",
+        "status": "Charge negotiation active"
+    },
+    {
+        "id": 20,
+        "address": "10 street, London, SE2 8CD",
+        "expiry_date": "2018-12-07T10:43:18.259Z",
+        "status": "Closed"
+    }
+]

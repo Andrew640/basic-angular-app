@@ -2,29 +2,21 @@
 
 .background {
     background-color:$background;
-    height:100%;
+    min-height:100%;
     background-size:cover;
 }
 
-.icons {
-    color:$icon;
-    font-size:36px;
-    padding:14px;
-    cursor:pointer;
-    &_right {
-        float:right;
-        font-size:32px;
-        margin-top:2px;
-    }
-    &_border {
-        border-bottom:1px solid $border;
-        width:100%;
-    }
-    &:focus {
-        outline:0;
-    }
+.header {
+    background-color:$background;
+    position:fixed;
+    width:100%;
+    border-bottom:1px solid $border;
+}
+
+.padding-top {
+    padding-top:64px;
 }
 
 .active {
-    background-color:$icon_clicked;
+    background-color:$background_darker;
 }

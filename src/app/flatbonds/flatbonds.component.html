@@ -1,1 +1,29 @@
-test
+<div class="header">
+    <span class="header_title">Flatbonds</span>
+    <i class="material-icons icons_add" (click)="createFlatbond()">add</i>
+    <select aria-placeholder="" class="header_dropdown">
+        <option value="" disabled selected>Filter</option>
+        <option>None</option>
+        <option>Status</option>
+        <option>Branch</option>
+        <option>Brand</option>
+        <option>User</option>
+        <option>Test</option>
+    </select>
+</div>
+
+<ul class="list">
+    <li class="list_element" *ngFor="let flatbond of flatbonds">
+        <div class="list_item list_item_id">{{flatbond.id}}</div>
+        <div class="list_item list_item_address">{{flatbond.address}}</div>
+        <div class="list_item list_item_ed"><span class="list_item_ed_r">expires</span>  {{flatbond.expiry_date}}</div>
+        <div class="list_item list_item_status"
+            [ngClass]="{
+                'yellow': flatbond.status === 'Pending tenant action',
+                'orange': flatbond.status === 'Charge negotiation active',
+                'grey': flatbond.status === 'Closed'
+            }">
+            {{flatbond.status}}
+        </div>
+    </li>
+</ul>
