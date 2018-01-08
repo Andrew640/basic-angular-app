@@ -14,7 +14,7 @@
 
 
 <ul class="content">
-    <li class="list_element" *ngFor="let flatbond of flatbonds">
+    <li class="list_element" routerLink="/" *ngFor="let flatbond of flatbonds">
         <div class="list_item list_item_id">{{flatbond.id}}</div>
         <div class="list_item list_item_address">{{flatbond.address}}</div>
         <div class="list_item list_item_ed"><span class="list_item_ed_r">expires</span>  {{flatbond.expiry_date}}</div>
