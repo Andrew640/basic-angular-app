@@ -1,0 +1,33 @@
+@import './styles/variables.scss';
+
+.icons {
+    color:$icon;
+    font-size:36px;
+    padding:14px;
+    cursor:pointer;
+    user-select:none;
+    &_right {
+        float:right;
+        font-size:32px;
+        padding-top:16px;
+        padding-bottom:16px;
+    }
+    &_border {
+        border-bottom:1px solid $border;
+        width:100%;
+    }
+    &:focus {
+        outline:0;
+    }
+    &:hover {
+        background-color:$background_darker_hover;
+    }
+    &_add {
+        color:$green;
+        font-size:28px;
+        padding:8px 16px 8px 8px;
+        float:right;
+        cursor:pointer;
+        user-select: none;
+    }
+}

@@ -1,46 +1,10 @@
 @import '../../styles/variables.scss';
 
-.header {
-    position:fixed;
-    width:100%;
-    background-color:$background-darker;
-    &_title {
-        color:$border;
-        margin-top:10px;
-        margin-left:10px;
-        float:left;
-        overflow:hidden;
-        user-select:none;
-    }
-    &_dropdown {
-        margin-top:8px;
-        margin-left:10px;
-        float:right;
-        border:none;
-        width:80px;
-        font-size:inherit;
-        color:$text_grey;
-        padding:3px;
-        -webkit-appearance:none; 
-        -moz-appearance:none;
-        outline:none;
-        border-radius:3px;
-        background-color:$background_darker_hover;
-        cursor:pointer;
-    }
-    &_border {
-        border-bottom:1px solid $border_add;
-        width:100%;
-        overflow:hidden;
-    }
-}
-
 .orange {color:rgb(255, 193, 79) !important;}
 .grey {color:grey !important;}
 .yellow {color:rgb(254, 254, 76) !important;}
 
 .list {
-    padding-top:40px;
     &_element {
         padding: 15px 20px;
         color:#fff;

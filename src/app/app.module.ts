@@ -6,6 +6,7 @@ import { FlatbondsComponent } from './flatbonds/flatbonds.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { PerformanceComponent } from './performance/performance.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
@@ -18,7 +19,8 @@ import { SettingsComponent } from './settings/settings.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
     FlatbondService

@@ -15,6 +15,7 @@ export class FlatbondsComponent implements OnInit {
   dates = [];
   month: any;
   day: any;
+  randNumber = Math.floor(Math.random() * 20) + 1;
 
   ngOnInit() {
     this.flatbondService.getFlatbonds().subscribe(flatbonds => {
@@ -39,6 +40,26 @@ export class FlatbondsComponent implements OnInit {
   }
 
   createFlatbond(flatbond) {
-    this.flatbondService.getFlatbonds().subscribe(flatbonds => this.flatbonds.push(flatbond));
+    // flatbond.status = 'test';
+    console.log(flatbond);
+    this.flatbondService.getFlatbonds().subscribe(flatbonds => this.flatbonds.push(
+      {
+        id: this.flatbonds.length + 1,
+        address: this.flatbonds[Math.floor(Math.random() * 20) + 1].address,
+        expiry_date: this.flatbonds[Math.floor(Math.random() * 20) + 1].expiry_date,
+        status: this.flatbonds[Math.floor(Math.random() * 20) + 1].status
+      }
+    ));
   }
 }
+
+// var textArray = [
+//   'song1.ogg',
+//   'song2.ogg'
+// ];
+
+// Flatbonds.status
+
+// var randomNumber = Math.floor(Math.random()*textArray.length);
+
+// audioElement.setAttribute('src', textArray[randomNumber]);

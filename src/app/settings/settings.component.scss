@@ -1,1 +1,64 @@
 @import '../../styles/variables.scss';
+
+.errmsg {
+    color:red;
+}
+
+.info {
+    color:#fff !important;
+}
+
+input {
+    border:none;
+    border-radius:2px;
+    padding:5px;
+    font-size:18px;
+    margin-top:10px;
+    margin-bottom:10px;
+    width:300px;
+}
+
+.form {
+    margin:20px 40px 0px 40px;
+    padding-bottom:20px;
+    &_label {
+        margin-top:10px;
+        color:#fff;
+        font-size:16px;
+    }
+    &_button {
+        border:none;
+        border-radius:2px;
+        padding:5px 10px;
+        font-size:16px;
+        margin-top:20px;
+        color:#fff;
+        background-color:rgb(86, 151, 230);
+        &:hover {
+            cursor:pointer;
+        }
+    }
+}
+
+.details {
+    font-size:16px;
+    margin:20px 40px 0px 40px;
+    padding-bottom:20px;
+    max-width: 500px;
+    &_title {
+        color:$title;
+        font-size:20px;
+    }
+    &_right {
+        float:right;
+        font-size:18px;
+        font-weight:bold;
+    }
+    &_detail {
+        color:#fff;
+        margin-top:20px;
+        margin-bottom:20px;
+        border-bottom:1px solid $border_list;
+        padding-bottom:3px;
+    }
+}

@@ -1,3 +1,5 @@
+@import './styles/comp_header.scss';
+@import './styles/icons.scss';
 @import './styles/variables.scss';
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
@@ -15,33 +17,6 @@ ul {
     margin:0;
 }
 
-.icons {
-    color:$icon;
-    font-size:36px;
-    padding:14px;
-    cursor:pointer;
-    &_right {
-        float:right;
-        font-size:32px;
-        padding-top:16px;
-        padding-bottom:16px;
-    }
-    &_border {
-        border-bottom:1px solid $border;
-        width:100%;
-    }
-    &:focus {
-        outline:0;
-    }
-    &:hover {
-        background-color:$background_darker_hover;
-    }
-    &_add {
-        color:$green;
-        font-size:24px;
-        padding:8px;
-        float:right;
-        cursor:pointer;
-        user-select: none;
-    }
+.content {
+    padding-top:44px;
 }

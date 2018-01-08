@@ -1,0 +1,31 @@
+<div class="comp_header">
+    <span class="comp_header_title">Settings</span>
+</div>
+
+<div class="content">
+    <div *ngIf="!edit" class="details">
+        <div class="details_title">Your details</div>
+        <div class="details_detail">Your name: <span class="details_right">{{this.first_name}} {{this.last_name}}</span></div>
+        <div class="details_detail">Password: <span class="details_right">{{this.password}}</span></div>
+        <div class="details_detail">Phone number: <span class="details_right">{{this.phone_number}}</span></div>
+        <div class="details_detail">Email address: <span class="details_right">{{this.email}}</span></div>
+        <button class="form_button" (click)="editDetails()">Edit my details</button>
+    </div>
+    <form *ngIf="edit" class="form" [formGroup]="settingsForm" (ngSubmit)="onSubmit(settingsForm.value, settingsForm.valid)">
+        <div>
+            <div class="form_label">First name</div>
+            <input formControlName="first_name" type="text" placeholder="Your first name"></div>
+        <div>
+            <div class="form_label">Last name</div>
+            <input formControlName="last_name" type="text" placeholder="Your last name"></div>
+        <div>
+            <div class="form_label">Password</div>
+            <input formControlName="password" type="password" placeholder="Your password"></div>
+        <div>
+            <div class="form_label">Email</div>
+            <input formControlName="email" type="email" placeholder="Your email" [ngClass]="{errmsg: !settingsForm.controls.email.valid && (settingsForm.controls.email.dirty || settingsForm.controls.email.touched)}">
+        </div>
+        <div><div class="form_label">Phone number</div><input formControlName="phone_number" type="text" placeholder="Your phone number" [ngClass]="{errmsg: !settingsForm.controls.phone_number.valid && (settingsForm.controls.phone_number.dirty || settingsForm.controls.phone_number.touched)}"></div>
+        <button class="form_button" type="submit">Save my details</button>
+    </form>
+</div>
