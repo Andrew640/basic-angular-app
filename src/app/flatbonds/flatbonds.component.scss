@@ -52,3 +52,24 @@
         }
     }   
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_content {
+    position: absolute;
+    background-color: $background_darker;
+    padding:15px;
+    z-index:1;
+    user-select:none;
+    text-align:left;
+    border: 1px solid $border_list;
+    margin-top:12px;
+}
+
+.filter_item {
+    margin-bottom:7px;
+    width:100%;
+}

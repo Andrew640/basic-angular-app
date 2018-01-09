@@ -1,18 +1,28 @@
 <div class="comp_header">
     <span class="comp_header_title">Flatbonds</span>
     <i class="material-icons icons_add" (click)="createFlatbond()">add</i>
-    <select aria-placeholder="" class="comp_header_dropdown">
-        <option value="" disabled selected>Filter</option>
-        <option>None</option>
-        <option>Status</option>
-        <option>Branch</option>
-        <option>Brand</option>
-        <option>User</option>
-        <option>Test</option>
-    </select>
+    <div *ngIf="statusSelected" class="comp_header_dropdown">
+        <span (click)="statusSelected = false">Status</span>
+        <div class="dropdown_content">
+            <div class="filter_item">Created</div>
+            <div class="filter_item">Pending tenant action</div>
+            <div class="filter_item">Active</div>
+            <div class="filter_item">Charge negotiation active</div>
+            <div class="filter_item">Closed</div>
+        </div>
+    </div>
+    <div class="comp_header_dropdown">
+        <span (click)="filter()">Filter</span>
+        <div *ngIf="filterClicked" class="dropdown_content">
+            <div class="filter_item">None</div>
+            <div (click)="status()" class="filter_item">Status</div>
+            <div class="filter_item">Branch</div>
+            <div class="filter_item">Brand</div>
+            <div class="filter_item">User</div>
+            <div class="filter_item">Test</div>
+        </div>
+    </div>
 </div>
-
-
 <ul class="content">
     <li class="list_element" routerLink="/" *ngFor="let flatbond of flatbonds">
         <div class="list_item list_item_id">{{flatbond.id}}</div>

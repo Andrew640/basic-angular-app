@@ -19,6 +19,7 @@
         float:right;
         border:none;
         width:80px;
+        text-align:center;
         font-size:inherit;
         color:$text_grey;
         padding:3px;
@@ -28,6 +29,7 @@
         border-radius:3px;
         background-color:$background_darker_hover;
         cursor:pointer;
+        user-select:none;
     }
     &_border {
         border-bottom:1px solid $border_add;

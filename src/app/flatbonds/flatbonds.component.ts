@@ -11,6 +11,8 @@ export class FlatbondsComponent implements OnInit {
 
   constructor(public flatbondService: FlatbondService) {}
 
+  filterClicked = false;
+  statusSelected = false;
   flatbonds;
   dates = [];
   month: any;
@@ -40,7 +42,6 @@ export class FlatbondsComponent implements OnInit {
   }
 
   createFlatbond(flatbond) {
-    // flatbond.status = 'test';
     console.log(flatbond);
     this.flatbondService.getFlatbonds().subscribe(flatbonds => this.flatbonds.push(
       {
@@ -51,15 +52,15 @@ export class FlatbondsComponent implements OnInit {
       }
     ));
   }
+
+  filter() {
+    this.filterClicked = !this.filterClicked;
+    this.statusSelected = false;
+  }
+
+  status() {
+    this.filterClicked = false;
+    this.statusSelected = true;
+  }
+
 }
-
-// var textArray = [
-//   'song1.ogg',
-//   'song2.ogg'
-// ];
-
-// Flatbonds.status
-
-// var randomNumber = Math.floor(Math.random()*textArray.length);
-
-// audioElement.setAttribute('src', textArray[randomNumber]);
