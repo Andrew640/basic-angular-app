@@ -3,7 +3,7 @@
     <i class="material-icons icons_add" (click)="createFlatbond()">add</i>
     <div *ngIf="statusSelected" class="comp_header_dropdown">
         <span (click)="statusSelected = false">Status</span>
-        <div class="dropdown_content">
+        <div class="filter_content">
             <div class="filter_item">Created</div>
             <div class="filter_item">Pending tenant action</div>
             <div class="filter_item">Active</div>
@@ -13,7 +13,7 @@
     </div>
     <div class="comp_header_dropdown">
         <span (click)="filter()">Filter</span>
-        <div *ngIf="filterClicked" class="dropdown_content">
+        <div *ngIf="filterClicked" class="filter_content">
             <div class="filter_item">None</div>
             <div (click)="status()" class="filter_item">Status</div>
             <div class="filter_item">Branch</div>
