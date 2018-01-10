@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="comp_header_dropdown">
-        <span (click)="filter()">Filter</span>
+        <span (click)="filter()">Filter by</span>
         <div *ngIf="filterClicked" class="filter_content">
             <div class="filter_item">None</div>
             <div (click)="status()" class="filter_item">Status</div>
@@ -23,7 +23,7 @@
         </div>
     </div>
 </div>
-<ul class="content">
+<ul class="content list">
     <li class="list_element" routerLink="/" *ngFor="let flatbond of flatbonds">
         <div class="list_item list_item_id">{{flatbond.id}}</div>
         <div class="list_item list_item_address">{{flatbond.address}}</div>

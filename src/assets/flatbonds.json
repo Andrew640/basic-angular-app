@@ -37,7 +37,7 @@
     },
     {
         "id": 7,
-        "address": "7 street, Loughborough, LO2 8CD",
+        "address": "7 street, Leicester, LO2 8CD",
         "expiry_date": "2018-09-07T10:43:18.259Z",
         "status": "Pending tenant action"
     },
@@ -97,7 +97,7 @@
     },
     {
         "id": 17,
-        "address": "7 street, Loughborough, LO2 8CD",
+        "address": "7 street, Leicester, LO2 8CD",
         "expiry_date": "2018-09-07T10:43:18.259Z",
         "status": "Pending tenant action"
     },

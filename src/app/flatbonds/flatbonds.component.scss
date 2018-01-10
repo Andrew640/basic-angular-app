@@ -5,6 +5,9 @@
 .yellow {color:rgb(254, 254, 76) !important;}
 
 .list {
+    @media(max-width:350px) {
+        font-size:14px;
+    }
     &_element {
         padding: 15px 20px;
         color:#fff;
@@ -18,32 +21,37 @@
     &_item {
         padding-right:7px;
         display:inline-block;
+        vertical-align:middle;
         @media(max-width:320px) {
             padding-right:3px;
         }
         &_ed {
             width:25%;
             @media(max-width:767px) {
-                width:35%;
+                width:42%;
+                text-align:center;
             }
             &_r {
-                color:rgb(215, 70, 70);
+                color:$red;
                 padding-right:5px;
                 font-size:12px;
-                @media(max-width:320px) {
+                @media(max-width:375px) {
                     display:none;
                 }
             }
         }
         &_address {
             width:25%;
+            @media(max-width:767px) {
+                width:22%;
+            }
         }
         &_id {
             width:5%;
             padding-right:0;
             padding-left:10px;
             @media(max-width:767px) {
-                padding-left:0;
+                display:none;
             }
         }
         &_status {
@@ -65,7 +73,7 @@
         margin-top:12px;
     }
     &_item {
-        margin-bottom:7px;
+        margin-bottom:10px;
         width:100%;
     }
 }

@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 .errmsg {
-    color:red;
+    color:$red;
 }
 
 .info {
@@ -15,11 +15,12 @@ input {
     font-size:18px;
     margin-top:10px;
     margin-bottom:10px;
-    width:300px;
+    max-width:400px;
+    width:100%;
 }
 
 .form {
-    margin:20px 40px 0px 40px;
+    margin:20px 40px 0px 35px;
     padding-bottom:20px;
     &_label {
         margin-top:10px;
@@ -42,6 +43,13 @@ input {
 
 .details {
     font-size:16px;
+    @media(max-width:375px) {
+        margin-left:20px;
+        margin-right:20px;
+    }
+    @media(max-width:320px) {
+        font-size:14px;
+    }
     margin:20px 40px 0px 40px;
     padding-bottom:20px;
     max-width: 500px;
@@ -53,6 +61,9 @@ input {
         float:right;
         font-size:18px;
         font-weight:bold;
+        @media(max-width:320px) {
+            font-size:16px;
+        }
     }
     &_detail {
         color:#fff;

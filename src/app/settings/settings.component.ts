@@ -47,7 +47,6 @@ export class SettingsComponent {
   }
 
   onSubmit(info, isValid: boolean) {
-
     if (isValid) {
       this.first_name = info.first_name;
       this.last_name = info.last_name;
@@ -55,10 +54,7 @@ export class SettingsComponent {
       this.phone_number = info.phone_number;
       this.email = info.email;
       this.edit = false;
-    } else {
     }
-    console.log(event);
-    console.log(this.settingsForm.value);
   }
 
 }

@@ -15,18 +15,17 @@ export class FlatbondsComponent implements OnInit {
   statusSelected = false;
   flatbonds;
   dates = [];
+  year: any;
   month: any;
   day: any;
-  randNumber = Math.floor(Math.random() * 20) + 1;
 
   ngOnInit() {
     this.flatbondService.getFlatbonds().subscribe(flatbonds => {
-      console.log(flatbonds);
       this.flatbonds = flatbonds;
 
       for (const flatbond of this.flatbonds ) {
         const date = new Date(flatbond.expiry_date);
-        const year = date.getFullYear();
+        this.year = date.getFullYear();
         this.month = date.getMonth() + 1;
         this.day = date.getDate();
 
@@ -36,13 +35,13 @@ export class FlatbondsComponent implements OnInit {
         if (this.month < 10) {
           this.month = '0' + this.month;
         }
-        flatbond.expiry_date = this.day + ' / ' + this.month + ' / ' + year;
+        this.year = this.year - 2000;
+        flatbond.expiry_date = this.day + ' / ' + this.month + ' / ' + this.year;
       }
     });
   }
 
   createFlatbond(flatbond) {
-    console.log(flatbond);
     this.flatbondService.getFlatbonds().subscribe(flatbonds => this.flatbonds.push(
       {
         id: this.flatbonds.length + 1,
